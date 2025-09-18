@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import CompA from "./CompA";
 
-//to add more than one value in context
+//By using useContext Hook
 
 const FirstName = createContext();
 const LastName = createContext();
@@ -9,7 +9,7 @@ const LastName = createContext();
 function App() {
   return (
     <FirstName.Provider value={"Shrihari"}>
-      <LastName.Provider value={"Nizamkar"}>
+      <LastName.Provider value={"N"}>
         <CompA />
       </LastName.Provider>
     </FirstName.Provider>
