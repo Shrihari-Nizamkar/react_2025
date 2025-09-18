@@ -1,5 +1,6 @@
 import "./App.css";
 import Content from "./Content";
+import Footer from "./Footer";
 import Header from "./Header";
 import { ThemeProvider } from "./ThemeContext";
 
@@ -10,6 +11,7 @@ function App() {
     <ThemeProvider>
       <Header />
       <Content />
+      <Footer />
     </ThemeProvider>
   );
 }

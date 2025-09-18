@@ -2,10 +2,16 @@ import React, { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 
 const Header = () => {
-  const value = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
-    <div>
-      <h1>Header : {value}</h1>
+    <div
+      style={{
+        backgroundColor: theme === "light" ? "#eee" : "#000",
+        color: theme === "light" ? "#000" : "#fff",
+      }}
+    >
+      <h1>Header : {theme}</h1>
+      <button onClick={toggleTheme}>Toggle Theme</button>
     </div>
   );
 };
