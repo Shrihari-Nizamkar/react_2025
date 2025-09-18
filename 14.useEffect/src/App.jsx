@@ -12,10 +12,11 @@ function App() {
     setNum2(num2 + 1);
   };
 
-  //renders first time when page loads when we pass an empty dependency .
+  //renders first time when page loads and also renders when num2 state changes
+
   useEffect(() => {
     console.log("useEffect");
-  }, []);
+  }, [num2]);
 
   return (
     <>
