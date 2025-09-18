@@ -12,9 +12,10 @@ function App() {
     setNum2(num2 + 1);
   };
 
+  //renders first time when page loads when we pass an empty dependency .
   useEffect(() => {
     console.log("useEffect");
-  });
+  }, []);
 
   return (
     <>
