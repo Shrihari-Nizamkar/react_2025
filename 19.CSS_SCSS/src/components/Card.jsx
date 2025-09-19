@@ -4,7 +4,7 @@ import styles from "./Card.module.scss";
 const Card = () => {
   return (
     <div className={styles.card}>
-      <h1 className={styles.title}>Rich Dad Poor Dad</h1>
+      <h1 className={styles.title}>SCSS MODULE EXAMPLE</h1>
     </div>
   );
 };
