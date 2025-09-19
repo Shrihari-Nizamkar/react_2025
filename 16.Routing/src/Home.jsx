@@ -3,9 +3,15 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
-  const btnClick = () => {
-    navigate("/user-details");
+  const person = {
+    id: 10,
+    name: "Shrihari",
   };
+
+  const btnClick = () => {
+    navigate("/user-details", { state: { person } });
+  };
+
   return (
     <div>
       <nav
