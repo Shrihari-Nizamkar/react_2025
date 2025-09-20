@@ -1,8 +1,8 @@
-import { todoReducer } from "./todoReducer";
-import { combineReducers, createStore } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
+import todoReducer from "./todoSlice";
 
-export const rootReducer = combineReducers({
-  todo: todoReducer,
+export const store = configureStore({
+  reducer: {
+    todo: todoReducer,
+  },
 });
-
-export const store = createStore(rootReducer);
